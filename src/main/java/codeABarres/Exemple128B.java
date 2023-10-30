@@ -6,7 +6,7 @@ import net.sourceforge.barbecue.Barcode;
 import net.sourceforge.barbecue.BarcodeFactory;
 import net.sourceforge.barbecue.BarcodeImageHandler;
 
-public class Exemple {
+public class Exemple128B {
 
   public static void main (String [] args) throws Exception {
 
@@ -15,9 +15,10 @@ public class Exemple {
     barcode.setBarHeight(60);
     barcode.setBarWidth(2);
 
-    File imgFile = new File("testsize.png");
+    File imgFile = new File("128B.png");
 
     //Write the bar code to PNG file
     BarcodeImageHandler.savePNG(barcode, imgFile);
+    System.out.println("Save 128B...");
   }
 }
